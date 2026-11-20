@@ -34,7 +34,7 @@ Prerequisites for the commands above: `nodejs`, `npm`, `golang` and `pipx`.
 On a fresh machine (Fedora):
 
 ```bash
-git clone git@github.com:YOUR_USERNAME/helix-config.git ~/dotfiles/helix
+git clone https://github.com/AzlaFord/HelixConfig.git ~/dotfiles/helix
 cd ~/dotfiles/helix
 ./install.sh
 ```
