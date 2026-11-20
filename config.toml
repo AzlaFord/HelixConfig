@@ -1,0 +1,56 @@
+theme = "tokyonight"
+
+[editor]
+line-number = "relative"
+mouse = true
+bufferline = "multiple"
+color-modes = true
+cursorline = true
+auto-format = true
+true-color = true
+idle-timeout = 0
+completion-trigger-len = 1
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.indent-guides]
+render = true
+
+[editor.lsp]
+display-inlay-hints = true
+display-messages = true
+
+[keys.normal]
+esc = ["collapse_selection", "keep_primary_selection"]
+
+[keys.insert]
+j = { k = "normal_mode" }
+
+[keys.normal.space.t]
+b = ":sh winmux sp fish > /dev/null"
+B = ":sh hx-utils blame > /dev/null"
+l = ":sh winmux popup lazygit > /dev/null"
+
+[keys.normal.space]
+e = ":sh hx-utils explorer > /dev/null"
+
+
+[keys.normal.space.o]
+l = ":sh hx-utils harpoon list"
+a = ":sh hx-utils harpoon add"
+d = ":sh hx-utils harpoon remove"
+1 = ":sh winmux -p 1 sp 'hx-utils harpoon open 1'"
+2 = ":sh winmux -p 1 sp 'hx-utils harpoon open 2'"
+3 = ":sh winmux -p 1 sp 'hx-utils harpoon open 3'"
+4 = ":sh winmux -p 1 sp 'hx-utils harpoon open 4'"
+5 = ":sh winmux -p 1 sp 'hx-utils harpoon open 5'"
+6 = ":sh winmux -p 1 sp 'hx-utils harpoon open 6'"
+7 = ":sh winmux -p 1 sp 'hx-utils harpoon open 7'"
+8 = ":sh winmux -p 1 sp 'hx-utils harpoon open 8'"
+9 = ":sh winmux -p 1 sp 'hx-utils harpoon open 9'"

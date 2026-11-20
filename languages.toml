@@ -1,0 +1,52 @@
+[[language]]
+name = "tsx"
+auto-format = true
+[language-server.pyright]
+command = "pyright-langserver"
+args = ["--stdio"]
+[language-server.pyright.config.python.analysis]
+diagnosticMode = "none"
+[[language]]
+name = "python"
+language-servers = ["pyright", "ruff"]
+[language-server.tailwindcss-ls]
+command = "tailwindcss-language-server"
+args = ["--stdio"]
+[[language]]
+name = "html"
+language-servers = [
+  "vscode-html-language-server",
+  "emmet-ls",
+  "tailwindcss-ls"
+]
+
+[[language]]
+name = "tsx"
+language-servers = ["typescript-language-server", "tailwindcss-ls"]
+
+[[language]]
+name = "jsx"
+language-servers = ["typescript-language-server", "tailwindcss-ls"]
+
+[[language]]
+name = "typescript"
+auto-format = true
+formatter = { command = "prettier", args = ["--stdin-filepath", "file.ts"] }
+
+[[language]]
+name = "javascript"
+auto-format = true
+formatter = { command = "prettier", args = ["--stdin-filepath", "file.js"] }
+
+[[language]]
+name = "tsx"
+auto-format = true
+formatter = { command = "prettier", args = ["--stdin-filepath", "file.tsx"] }
+
+[[language]]
+name = "json"
+auto-format = true
+formatter = { command = "prettier", args = ["--stdin-filepath", "file.json"] }
+[language-server.emmet-ls]
+command = "emmet-language-server"
+args = ["--stdio"]
